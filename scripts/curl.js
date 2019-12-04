@@ -8,6 +8,7 @@ let water = document.querySelectorAll(".cut")
 let myporosity = document.querySelectorAll(".myporosity")
 let change = document.querySelector("h2")
 let snd = document.querySelector("#myAudio")
+let click = document.querySelector("#click")
 
 function hideAllSections(){
   sections.forEach(function(el){
@@ -27,6 +28,7 @@ function hideAllPorosity(){
 
 
 
+
 hideAllSections();
 
 
@@ -38,28 +40,33 @@ list.forEach(function(el) {
   el.onclick = (e) => {
     // hide all the divs to ensure that only one will be open
     hideAllSections();
+    click.play();
 
     switch (e.target.getAttribute('id')) {
       case 'type':
         document.querySelector('#curlpattern')
         	.style.display = 'block';
+          document.querySelector("#changingheader").textContent="WHAT IS MY HAIR TYPE?";
           document.querySelector("h2").textContent="Hair types and curl patterns can differ from head to head. but here are a few to get you started!";
         break;
       case 'por':
         document.querySelector('#porosity')
         	.style.display = 'block';
+          document.querySelector("#changingheader").textContent="WHAT IS MY HAIR'S POROSITY?";
             document.querySelector("h2").textContent="Porosity is determined by how well your hair can absorb and maintain mositure.";
           hideAllPorosity();
         break;
       case 'den':
         document.querySelector('#hairdensity')
         .style.display = 'block';
+        document.querySelector("#changingheader").textContent="WHAT IS MY HAIR'S DENSITY";
           document.querySelector("h2").textContent="Hair density is determined by the closeness of the folicle on the scalp.";
         break;
         case 'ing':
           document.querySelector('#ingredients')
           .style.display = 'block';
-            document.querySelector("h2").textContent="Here are some ingredients good to use for masks depending on your hair type.";
+          document.querySelector("#changingheader").textContent="WHAT ARE GOOD INGREDIENTS TO USE IN MY HAIR?";
+            document.querySelector("h2").textContent="Here are some great ingredients to use for DIY hair masks!";
           break;
     } // end of switch
 
@@ -70,6 +77,7 @@ list.forEach(function(el) {
 
 water.forEach(function(el){
   el.onclick = (e) =>{
+      snd.play();
     hideAllPorosity();
     switch (e.target.getAttribute("id")){
       case 'lowdrop':
@@ -94,6 +102,7 @@ showSlides(slideIndex);
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
+  click.play();
 }
 
 // Thumbnail image controls

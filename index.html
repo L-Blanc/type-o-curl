@@ -8,21 +8,26 @@
   <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Quicksand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/curls.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
   <title>Type-o-Curl</title>
 </head>
 
 <body>
-  <div id="main">
-    <h1> Type-O-Curl </h1>
-    <h2> Hi there natural hair explorer! This app will help you learn more about how to manage and maintain your natural hair type! </h2>
-  </div>
+  <div id="headerinfo">
+<h1><span>T</span><span>y</span><span>p</span><span>e</span><span> </span> <span> - </span> <span>O</span> <span>-</span><span> </span><span>C</span><span>u</span><span>r</span><span>l</span></h1>
+<div id="main">
+  <div id="headerbox">
+    <p id="changingheader"></p>
+    <h2>Hi there natural hair explorer! This app will help you learn about how to manage and maintain your natural hair type!<h2> </div>
+</div>
+</div>
 
   <nav id="nav">
     <ul>
       <li class="list fade" id="type">HAIR TYPE</li>
       <li class="list fade" id="por">POROSITY</li>
       <li class="list fade" id="den">HAIR DENSITY</li>
-      <li class="list fade" id="ing">INGREDIENTS</li>
+      <li class="list fade" id="ing">HELPFUL INGREDIENTS</li>
     </ul>
   </nav>
   <!-- <p> Hair Type Options</p> -->
@@ -47,14 +52,14 @@
               <div class="numbertext">1 / 8</div>
               <h4> Type 1 </h4>
               <img id="curlpic" src="images/type1.png" style="width:100%">
-              <div class="text">Type 1 hair is naturally straight with no defined curl pattern. This type of hair requires a lot of heat to curl and heavy products to keep styles in place.Type 1 hair also reflects the most shine as hair oils can travel straight from scalp to tip.</div>
+              <div class="text">Type 1 hair is naturally straight with no defined curl pattern. This type of hair requires a lot of heat to curl and heavy products to keep styles in place. Type 1 hair also reflects the most shine as hair oils can travel straight from scalp to tip.</div>
             </div>
 
             <div class="mySlides fade">
               <h4> Type 2 </h4>
               <div class="numbertext">2 / 8</div>
               <img id="curlpic" src="images/type2.png" style="width:100%">
-              <div class="text">Type 2 hair has a bit more of a natural wave to it than type 1 hair. It not completley straight buuuuut not necesarrily curly either. Type 2 has some bounce and isn't overly oily or dry. Light sprays and mouse should get the job done for simple styles.</div>
+              <div class="text">Type 2 hair has a bit more of a natural wave to it than type 1 hair. It's not completley straight buuuuut not necesarrily curly either. Type 2 has some bounce and isn't overly oily or dry. Light sprays and mouse should get the job done for simple styles.</div>
             </div>
 
             <div class="mySlides fade">
@@ -82,7 +87,7 @@
               <h4> Type 4a </h4>
               <div  id="curlpic" class="numbertext">6 / 8</div>
               <img src="images/type4a.png" >
-              <div class="text">Type 4a curls are wiry and start to resemble more coils than ringlet-like curls like in type 3 hair.The individual hair strands have a dense s-shape that make it hard for oils to travel down the shaft making type 4 hair the driest of all types. </div>
+              <div class="text">Type 4a curls are wiry and start to resemble more coils than ringlet-like curls like in type 3 hair. The individual hair strands have a dense s-shape that make it hard for oils to travel down the shaft making type 4 hair the driest of all types. </div>
             </div>
 
             <div class="mySlides fade">
@@ -96,7 +101,7 @@
               <h4> Type 4c </h4>
               <div  id="curlpic" class="numbertext">8 / 8</div>
               <img src="images/type4c.png" >
-              <div class="text">Rather than curling or coiling, Type 4b curls are bent at an angle. These z-shaped curls are fragile and prone to shriinkage.</div>
+              <div class="text">Type 4c curls are as densely packed but with less definition than the other type 4 curls. These curls can range from fine to wiry to coarse and require the most product for styling.</div>
             </div>
 
 
@@ -179,7 +184,7 @@
         <article class="myporosity" id="lowporosity">
           <img src="images/low.png" class="porpic" alt="loose">
           <h4> Low Porosity</h4>
-          <p class="porositytext"> If you have low porosity hair, your hair cuitcles lay down flat on top of one another and initally repel moisture until they open up and allow water to pass. Then cuticles close back up once that moisture is in there its not going anywhere! These strands are prone to product build up which can leave the hair feeling dry or sticky, so try and do a clease or co-wash a few days before wash day. Use warm water and deep conditioner treatments with heat to open up the cuiticle and help moisture flow more freely.</p>
+          <p class="porositytext"> If you have low porosity hair, your hair cuitcles lay down flat on top of one another and initally repel moisture until they open up and allow water to pass. Then cuticles close back up and once that moisture is in there its not going anywhere! These strands are prone to product build up which can leave the hair feeling dry or sticky, so try and do a clease or co-wash a few days before wash day. Use warm water and deep conditioner treatments with heat to open up the cuiticle and help moisture flow more freely.</p>
         </article>
 
         <article class="myporosity" id="medporosity">
@@ -196,9 +201,13 @@
       </div>
 
         <div id="waterdrops">
-          
+
           <audio id="myAudio">
-            <source src="drip.wav" type="audio/wav">
+            <source src="sounds/water-click.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <audio id="click">
+            <source src="sounds/click.mp3" type="audio/mp3">
             Your browser does not support the audio element.
           </audio>
 
@@ -298,7 +307,11 @@
 <div class="btn btn-primary tooltip">    <img id="coconut" src="images/coconut.png" alt="coconut">
 <div class="top">
   <h3>Coconut</h3>
-  <p>This will be sample text until I actually put it in.</p>
+  <p>This will be sample text until I actually put it in.<ul>
+  <li> something </li>
+    <li> something </li>
+      <li> something </li>
+    </ul></p>
   <i></i>
 </div>
 </div>
@@ -306,7 +319,11 @@
 <div class="btn btn-primary tooltip">   <img id="egg" src="images/egg.png" alt="egg">
 <div class="top">
   <h3>Egg</h3>
-  <p> This will be sample text until I actually put it in.</p>
+  <p> This will be sample text until I actually put it in.<ul>
+  <li> something </li>
+    <li> something </li>
+      <li> something </li>
+    </ul></p>
   <i></i>
 </div>
 </div>
