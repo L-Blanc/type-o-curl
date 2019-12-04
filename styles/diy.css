@@ -1,0 +1,54 @@
+html {
+    font-size: 100%; /* keep */
+    box-sizing: border-box; /* keep */
+}
+* {
+    box-sizing: inherit; /* keep */
+}
+body {
+    font-family:'Roboto Condensed', 'Verdana',  sans-serif;
+    background: rgb(255,222,51);
+background: radial-gradient(circle, rgba(255,222,51,1) 0%, rgba(255,191,37,1) 100%);
+    color: #40370D; /* keep */
+    margin: 0; /* keep */
+}#container {
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+  margin-top: 10em;
+}
+#container2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+}
+        ;
+}
+#capsule {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+}
+
+/* all grid items -
+    these are the 10 direct children of the container
+    - all the grid items are here already!
+    You may add lines as needed. Do not change any line marked -keep-
+    */
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  background-color: #FFC9D0;
+  text-align: center;
+  font-size: 4rem;
+}
+p{
+  text-align:center;
+}

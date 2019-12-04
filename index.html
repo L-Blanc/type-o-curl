@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/curls.css">
+  <title>Type-o-Curl</title>
+</head>
+
+<body>
+  <div id="main">
+    <h1> Type-O-Curl </h1>
+    <h2> Hi there natural hair explorer! This app will help you learn more about how to manage and maintain your natural hair type! </h2>
+  </div>
+
+  <nav id="nav">
+    <ul>
+      <li class="list fade" id="type">HAIR TYPE</li>
+      <li class="list fade" id="por">POROSITY</li>
+      <li class="list fade" id="den">HAIR DENSITY</li>
+      <li class="list fade" id="ing">INGREDIENTS</li>
+    </ul>
+  </nav>
+  <!-- <p> Hair Type Options</p> -->
+  <!-- <form>
+        <label for="menu"> My Hair Type is...</label>
+        <select class="form-control" name="menu" id="menu">
+          <option id="opt1" value="3a"> Type 3a </option>
+          <option id="opt2" value="3b"> 3b </option>
+          <option value="3c"> 3c </option>
+          <option value="4a"> 4a </option>
+          <option value="4b"> 4b </option>
+          <option value="4c"> 4c </option>
+        </select>
+      </div></    </div>
+        </form>div>    </div>
+          </form> -->
+
+          <section class="slideshow-container" id="curlpattern">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 8</div>
+              <h4> Type 1 </h4>
+              <img id="curlpic" src="images/type1.png" style="width:100%">
+              <div class="text">Type 1 hair is naturally straight with no defined curl pattern. This type of hair requires a lot of heat to curl and heavy products to keep styles in place.Type 1 hair also reflects the most shine as hair oils can travel straight from scalp to tip.</div>
+            </div>
+
+            <div class="mySlides fade">
+              <h4> Type 2 </h4>
+              <div class="numbertext">2 / 8</div>
+              <img id="curlpic" src="images/type2.png" style="width:100%">
+              <div class="text">Type 2 hair has a bit more of a natural wave to it than type 1 hair. It not completley straight buuuuut not necesarrily curly either. Type 2 has some bounce and isn't overly oily or dry. Light sprays and mouse should get the job done for simple styles.</div>
+            </div>
+
+            <div class="mySlides fade">
+              <h4> Type 3a </h4>
+              <div  id="curlpic" class="numbertext">3 / 8</div>
+              <img src="images/type3a.png" >
+              <div class="text">Type 3a hair has a natural definite curl pattern and is typically more voluminous and patterned than type 2. These curls are s-shaped and form ringlets that make it hard for natural oils to travel all the way down the shaft, often leading to dry hair.</div>
+            </div>
+
+            <div class="mySlides fade">
+              <h4> Type 3b </h4>
+              <div  id="curlpic" class="numbertext">4 / 8</div>
+              <img src="images/type3b.png" >
+              <div class="text">Type 3b curls have more spring and spirals which requrie more moisture and oils to be added to them than type 3a. </div>
+            </div>
+
+            <div class="mySlides fade">
+              <h4> Type 3c </h4>
+              <div  id="curlpic" class="numbertext">5 / 8</div>
+              <img src="images/type3c.png" >
+              <div class="text">Type 3c curls are more tightly packed than type 3b and are the most voluminous of type 3 hair. The curls are about pencil width and corkscrew like. They tend to dry fast so hydration and moisture are key!</div>
+            </div>
+
+            <div class="mySlides fade">
+              <h4> Type 4a </h4>
+              <div  id="curlpic" class="numbertext">6 / 8</div>
+              <img src="images/type4a.png" >
+              <div class="text">Type 4a curls are wiry and start to resemble more coils than ringlet-like curls like in type 3 hair.The individual hair strands have a dense s-shape that make it hard for oils to travel down the shaft making type 4 hair the driest of all types. </div>
+            </div>
+
+            <div class="mySlides fade">
+              <h4> Type 4b </h4>
+              <div  id="curlpic" class="numbertext">7 / 8</div>
+              <img src="images/type4b.png" >
+              <div class="text">Rather than curling or coiling, Type 4b curls are bent at an angle. These z-shaped curls are fragile and prone to shriinkage.</div>
+            </div>
+
+            <div class="mySlides fade">
+              <h4> Type 4c </h4>
+              <div  id="curlpic" class="numbertext">8 / 8</div>
+              <img src="images/type4c.png" >
+              <div class="text">Rather than curling or coiling, Type 4b curls are bent at an angle. These z-shaped curls are fragile and prone to shriinkage.</div>
+            </div>
+
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+          </div>
+            </section>
+
+          <div id="container">
+<!--
+            <section id="curlpattern">
+
+            <article class="curls" id="type1">
+              <h4> Type 1 </h4>
+          <img id='opt1' src="images/type1.png" alt="loose">
+          <p class="text">Type 1 hair is naturally straight with no defined curl pattern. This type of hair requires a lot of heat to curl and heavy products to keep styles in place.Type 1 hair also reflects the most shine as hair oils can travel straight from scalp to tip. </p>
+        </article>
+
+        <article class="curls" id="type2">
+          <h4 class="types"> Type 2 </h4>
+          <img id='opt2' src="images/type2.png" alt="loose">
+          <p class="text">Type 2 hair has a bit more of a natural wave to it than type 1 hair. It not completley straight buuuuut not necesarrily curly either. Type 2 has some bounce and isn't overly oily or dry. Light sprays and mouse should get the job done for simple styles.</p>
+        </article>
+
+        <article class="curls" id="type3a">
+          <h4 class="types"> Type 3a </h4>
+          <img id='opt3' src="images/type3a.png" alt="loose">
+          <p class="text">Type 3a hair has a natural definite curl pattern and is typically more voluminous and patterned than type 2. These curls are s-shaped and form ringlets that make it hard for natural oils to travel all the way down the shaft, often leading to dry hair. </p>
+        </article>
+
+        <article class="curls" id="type3b">
+          <h4 class="types"> Type 3b </h4>
+          <img id='opt3' src="images/type3b.png" alt="loose">
+          <p class="text">Type 3b curls have more spring and spirals which requrie more moisture and oils to be added to them than type 3a. </p>
+        </article>
+
+        <article class="curls" id="type3c">
+          <h4 class="types"> Type 3c </h4>
+          <img id='opt4' src="images/type3c.png" alt="loose">
+          <p class="text">Type 3c curls are more tightly packed than type 3b and are the most voluminous of type 3 hair. The curls are about pencil width and corkscrew like. They tend to dry fast so hydration and moisture are key!</p>
+        </article>
+
+        <article class="curls" id="type4a">
+          <h4 class="types"> Type 4a </h4>
+          <img id='opt4' src="images/type4a.png" alt="loose">
+          <p class="text">Type 4a curls are wiry and start to resemble more coils than ringlet-like curls like in type 3 hair.The individual hair strands have a dense s-shape that make it hard for oils to travel down the shaft making type 4 hair the driest of all types. </p>
+        </article>
+
+        <article class="curls" id="type4b">
+          <h4 class="types"> Type 4b </h4>
+          <img id='opt4' src="images/type4b.png" alt="loose">
+          <p class="text">Rather than curling or coiling, Type 4b curls are bent at an angle. These z-shaped curls are fragile and prone to shriinkage.</p>
+        </article>
+
+        <article class="curls" id="type4c">
+          <h4 class="types"> Type 4c </h4>
+          <img id='opt4' src="images/type4c.png" alt="loose">
+          <p class="text">Type 4c curls are as densely packed but with less definition than the other type 4 curls. These curls can range from fine to wiry to coarse and require the most product for styling.</p>
+        </article>
+
+      </section> -->
+
+<section class="fade" id="porosity">
+
+  <div id="porositytype">
+        <article class="myporosity" id="lowporosity">
+          <img src="images/low.png" class="porpic" alt="loose">
+          <h4> Low Porosity</h4>
+          <p class="porositytext"> If you have low porosity hair, your hair cuitcles lay down flat on top of one another and initally repel moisture until they open up and allow water to pass. Then cuticles close back up once that moisture is in there its not going anywhere! These strands are prone to product build up which can leave the hair feeling dry or sticky, so try and do a clease or co-wash a few days before wash day. Use warm water and deep conditioner treatments with heat to open up the cuiticle and help moisture flow more freely.</p>
+        </article>
+
+        <article class="myporosity" id="medporosity">
+          <img src="images/med.png" class="porpic" alt="loose">
+          <h4> Medium Porosity</h4>
+          <p class="porositytext">For medium porosity hair, the cuticle is looser and lets in just the right amouht of water to hydrate your hair and hold styles for a good amount of time. This porosity is also great at holding on to color and other chemical processes. Occasional deep conditioning is good especiialy when the hair feels drier.</p>
+        </article>
+
+        <article class="myporosity" id="highporosity">
+          <img src="images/high.png" class="porpic" alt="loose">
+          <h4> High Porosity </h4>
+          <p class="porositytext">If you have high porosity hair, the cuticle is wide open with gaps inbetween that let in a lot of moisture which can lead to frizz and tangling. High porosity hair dries quickly as it lets water out as quickly as it comes in, so use cold water and oils to seal in moisture.</p>
+        </article>
+      </div>
+
+        <div id="waterdrops">
+
+          <div>
+        <img class="cut" id="lowdrop" src="images/1.png" alt="water">
+        <p> My hair likes a little water.</p>
+      </div>
+
+      <div>
+        <img class="cut" id="meddrop" src="images/2.png" alt="water">
+        <p> My hair can hold a good amount of water.</p>
+      </div>
+
+      <div>
+        <img class="cut" id="highdrop" src="images/3.png" alt="water">
+        <p> My hair needs to be drenched!</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="fade" id="hairdensity">
+    <div id="dense">
+    <div>
+    <img src="images/circle.png" alt="demo">
+  </div>
+
+  <div>
+  <img src="images/circle.png" alt="demo">
+</div>
+
+<div>
+<img src="images/circle.png" alt="demo">
+</div>
+
+</div>
+
+  </section>
+
+    <section class="fade" id='ingredients'>
+
+      <div id="jar">
+      <div class="btn btn-primary tooltip">  <img id="aloe" src="images/aloevera.png" alt="aloevera">
+    <div class="top">
+        <h3>Aloe vera</h3>
+        <p>This will be sample text until I actually put it in.</p>
+        <ul>
+        <li> something </li>
+          <li> something </li>
+            <li> something </li>
+          </ul>
+        <i></i>
+    </div>
+</div>
+
+<div class="btn btn-primary tooltip">    <img id="avo" src="images/avocado.png" alt="avocado">
+<div class="top">
+  <h3>Avocado</h3>
+  <p>This will be sample text until I actually put it in.</p>
+  <ul>
+  <li> something </li>
+    <li> something </li>
+      <li> something </li>
+    </ul>
+  <i></i>
+</div>
+</div>
+
+<div class="btn btn-primary tooltip">  <img id="hon" src="images/honey.png" alt="honey">
+<div class="top">
+  <h3>Honey</h3>
+  <p> This will be sample text until I actually put it in.
+  <ul>
+  <li> something </li>
+    <li> something </li>
+      <li> something </li>
+    </ul>
+</p>
+  <i></i>
+</div>
+</div>
+
+<div class="btn btn-primary tooltip">  <img id="banana" src="images/banana.png" alt="banana">
+<div class="top">
+  <h3>Banana</h3>
+  <p> This will be sample text until I actually put it in.  <ul>
+    <li> something </li>
+      <li> something </li>
+        <li> something </li>
+      </ul>
+    </p>
+  <i></i>
+</div>
+</div>
+
+<div class="btn btn-primary tooltip">    <img id="coconut" src="images/coconut.png" alt="coconut">
+<div class="top">
+  <h3>Coconut</h3>
+  <p>This will be sample text until I actually put it in.</p>
+  <i></i>
+</div>
+</div>
+
+<div class="btn btn-primary tooltip">   <img id="egg" src="images/egg.png" alt="egg">
+<div class="top">
+  <h3>Egg</h3>
+  <p> This will be sample text until I actually put it in.</p>
+  <i></i>
+</div>
+</div>
+</div>
+
+</section>
+
+  <script src="scripts/curl.js"></script>
+
+</body>
+
+</html>
