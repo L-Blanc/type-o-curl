@@ -7,8 +7,7 @@ let sections = document.querySelectorAll("section")
 let water = document.querySelectorAll(".cut")
 let myporosity = document.querySelectorAll(".myporosity")
 let change = document.querySelector("h2")
-
-
+let snd = document.querySelector("#myAudio")
 
 function hideAllSections(){
   sections.forEach(function(el){
