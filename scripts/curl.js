@@ -47,26 +47,26 @@ list.forEach(function(el) {
         document.querySelector('#curlpattern')
         	.style.display = 'block';
           document.querySelector("#changingheader").textContent="WHAT IS MY HAIR TYPE?";
-          document.querySelector("h2").textContent="Hair types and curl patterns can differ from head to head. but here are a few to get you started!";
+          document.querySelector("h2").textContent="- Hair types and curl patterns can differ from head to head. Here are a few to get you started! -";
         break;
       case 'por':
         document.querySelector('#porosity')
         	.style.display = 'block';
           document.querySelector("#changingheader").textContent="WHAT IS MY HAIR'S POROSITY?";
-            document.querySelector("h2").textContent="Porosity is determined by how well your hair can absorb and maintain mositure.";
+            document.querySelector("h2").textContent="- Porosity is determined by how well your hair can absorb and maintain mositure. -";
           hideAllPorosity();
         break;
       case 'den':
         document.querySelector('#hairdensity')
         .style.display = 'block';
-        document.querySelector("#changingheader").textContent="WHAT IS MY HAIR'S DENSITY";
-          document.querySelector("h2").textContent="Hair density is determined by the closeness of the folicle on the scalp.";
+        document.querySelector("#changingheader").textContent="WHAT IS MY HAIR'S DENSITY?";
+          document.querySelector("h2").textContent="- Hair density is determined by the closeness of the folicle on the scalp. -";
         break;
         case 'ing':
           document.querySelector('#ingredients')
           .style.display = 'block';
           document.querySelector("#changingheader").textContent="WHAT ARE GOOD INGREDIENTS TO USE IN MY HAIR?";
-            document.querySelector("h2").textContent="Here are some great ingredients to use for DIY hair masks!";
+            document.querySelector("h2").textContent="- Here are some great ingredients to use for DIY hair masks! -";
           break;
     } // end of switch
 
