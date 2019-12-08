@@ -67,7 +67,7 @@ nav ul {
   list-style: none;
   padding-bottom: 1rem;
   margin-right: 3rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 nav ul li {
@@ -205,6 +205,7 @@ h2 {
   margin: 0;
   font-size: 1.5rem;
   padding: 0 2rem;
+
 }
 
 #headerbox {
@@ -214,7 +215,7 @@ h2 {
 }
 
 #changingheader {
-  font-family: 'Dosis', 'Amatic SC', 'Roboto Condensed', 'Verdana', sans-serif;
+  font-family: 'Cabin','Dosis', 'Amatic SC', 'Roboto Condensed', 'Verdana', sans-serif;
   text-align: center;
   margin: 0;
   padding: 0 2rem;
@@ -234,13 +235,18 @@ h4 {
   font-size: 3rem;
   text-align: center;
   margin: 0;
+}.sliderheader{
+  font-family: 'Dosis', 'Amatic SC', 'Roboto Condensed', 'Verdana', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
 }
 
 h5 {
   font-family: 'Cabin', 'Dosis', 'Amatic SC', 'Roboto Condensed', 'Verdana', sans-serif;
   font-size: 1.8rem;
   text-align: center;
-  margin: 0;
+  margin-top: 1rem;
 }
 
 footer {
@@ -251,7 +257,7 @@ footer {
 #porosity {
   border-style: groove;
   border-color: #40370D;
-  background-color: hsl(50, 75%, 55%);
+  background-color:hsl(60, 75%, 75%);
   border-radius: 1rem;
   padding: .5rem 1rem;
   margin: 4rem;
@@ -284,13 +290,6 @@ footer {
   align-items: center;
   max-width: 100%;
 }
-
-#dense {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 100%;}
 
   #lowporosity{
     display: flex;
@@ -325,12 +324,11 @@ footer {
     max-width: 700px;
   }
 .densitytext {
-  padding: .5rem 6rem;
+  padding: .5rem 3rem;
   text-align: center;
-  max-width: 500px;
   font-size: 1.4rem;
     font-family: 'Dosis', 'Amatic SC', 'Roboto Condensed', 'Verdana', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
 }
 .porositywrapper {
   display: flex;
@@ -344,14 +342,20 @@ margin-top: 3rem;
   border-color: #40370D;
   background-color: hsl(35, 65%, 60%);
   border-radius: 1rem;
-    padding: 2rem;
+  padding: 2rem;
 	}
-
+.densityborder{
+  margin-top: 2rem;
+  border-style: groove;
+  border-color: #40370D;
+  background-color: hsl(60, 75%, 75%);
+  border-radius: 1.5rem;
+  margin: .8rem;
+}
 
 	.box {
 		backround-color: #444;
 		border-radius: 5px;
-		padding: 20px;
 		font-size: 150%;
 	}
 
@@ -370,6 +374,8 @@ margin-top: 3rem;
 }
 
 #dense {
+
+  border-radius: 2rem;
   max-width: 1280px;
   /* keep */
   margin: auto;
@@ -382,24 +388,6 @@ margin-top: 3rem;
     "h5 h5 h5"
     "lowden meddeen highden"
     "text1 text2 text3";
-}#lowdensityborder{
-  border-style: solid;
-  border-color: #40370D;
-  background-color: hsl(35, 65%, 60%);
-  border-radius: 1rem;
-
-}#meddensityborder{
-  border-style: groove;
-  border-color: #40370D;
-  background-color: hsl(35, 65%, 60%);
-  border-radius: 1rem;
-
-}#highdensityborder{
-  border-style: groove;
-  border-color: #40370D;
-  background-color: hsl(35, 65%, 60%);
-  border-radius: 1rem;
-
 }
 #text3 {
   grid-area: text3;
@@ -423,6 +411,16 @@ margin-top: 3rem;
 
 #lowden {
   grid-area: lowden;
+}
+
+.curlpic {
+  align-self: flex-end;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  height: 250px;
+  margin: 0 auto 0 auto;
+  transform-origin: bottom;
+  width: 250px;
 }
 
 .bounce-7 {
@@ -546,7 +544,7 @@ margin-top: 3rem;
 /* slide show made with W3schools demo code */
 .slideshow-container {
   border-style: groove;
-  background-color: hsl(50, 75%, 55%);
+  background-color: hsl(60, 75%, 75%);
   border-color: #40370D;
   border-radius: 1rem;
   padding: .5rem 1rem;

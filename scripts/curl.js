@@ -53,7 +53,7 @@ list.forEach(function(el) {
         document.querySelector('#porosity')
         	.style.display = 'block';
           document.querySelector("#changingheader").textContent="WHAT IS MY HAIR'S POROSITY?";
-            document.querySelector("h2").textContent="Porosity is determined by how well your hair can absorb and maintain mositure.";
+            document.querySelector("h2").textContent="Porosity is determined by how well your hair can absorb and maintain moisture.";
           hideAllPorosity();
         break;
       case 'den':
