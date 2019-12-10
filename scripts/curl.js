@@ -53,20 +53,20 @@ list.forEach(function(el) {
         document.querySelector('#porosity')
         	.style.display = 'block';
           document.querySelector("#changingheader").textContent="WHAT IS MY HAIR'S POROSITY?";
-            document.querySelector("h2").textContent="Porosity is determined by how well your hair can absorb and maintain moisture.";
+            document.querySelector("h2").textContent="Porosity is determined by how well your hair can absorb and hold water.";
           hideAllPorosity();
         break;
       case 'den':
         document.querySelector('#hairdensity')
         .style.display = 'block';
         document.querySelector("#changingheader").textContent="WHAT IS MY HAIR'S DENSITY?";
-          document.querySelector("h2").textContent="Hair density is determined by the closeness of the folicle on the scalp.";
+          document.querySelector("h2").textContent="Hair density is determined by how close together your hair's folicles are.";
         break;
         case 'ing':
           document.querySelector('#ingredients')
           .style.display = 'block';
           document.querySelector("#changingheader").textContent="WHAT ARE GOOD INGREDIENTS TO USE IN MY HAIR?";
-            document.querySelector("h2").textContent="Here are some great ingredients to use for DIY hair masks!";
+            document.querySelector("h2").textContent="Here are some great ingredients to use during your wash day, or for DIY hair masks!";
           break;
     } // end of switch
 
@@ -96,6 +96,7 @@ water.forEach(function(el){
   }
 });
 
+//Script for slideshow from https://www.w3schools.com/howto/howto_js_slideshow.asp
 var slideIndex = 1;
 showSlides(slideIndex);
 
